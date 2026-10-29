@@ -1,0 +1,13 @@
+[project]
+name = "pixel-art-game-studio"
+version = "0.1.0"
+description = "Claude Code skill, specialist subagents, and tools for building original 2D pixel-art games"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []
+
+# Not a Python package: the scripts are run directly. This file records metadata and test settings.
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]

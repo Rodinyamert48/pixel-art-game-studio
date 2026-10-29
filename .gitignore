@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Test and tool artifacts
+.coverage
+htmlcov/
+demo-assets/
+
+# Installer backups (created inside target .claude directories)
+.pixel-art-game-studio-backups/
+
+# Claude Code local-only settings
+.claude/settings.local.json
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Game build outputs (for games created inside this repository, e.g. games/)
+games/**/build/
+games/**/export/
+games/**/.godot/
+games/**/bin/
+games/**/obj/
