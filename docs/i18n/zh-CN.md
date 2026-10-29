@@ -135,4 +135,4 @@ python scripts/validate_repository.py
 <!-- section: license -->
 ## 许可证
 
-Pixel Art Game Studio 采用 [MIT 许可证](../../LICENSE) 发布。你用它制作的游戏归你所有。
+Pixel Art Game Studio 采用[仅限使用许可证](../../LICENSE)发布：你可以免费使用它，但不得出售、修改或再分发。你用它制作的游戏归你所有。

@@ -1,21 +1,54 @@
-MIT License
+Pixel Art Game Studio Use-Only License
 
-Copyright (c) 2026 Pixel Art Game Studio contributors
+Copyright (c) 2026 Rodinyamert48. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This license applies to Pixel Art Game Studio, including its source code, scripts, skill
+instructions, agent definitions, documentation, and translations (the "Software").
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. Permission to use
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+   You may download, install, and use the Software free of charge, for personal or professional
+   work, exactly as published by the copyright holder. You may make the copies that are strictly
+   needed to install and run it for your own use (for example, the copies made by its installer).
+
+2. Restrictions
+
+   Unless the copyright holder gives you prior written permission, you may not:
+
+   a. sell, rent, lease, license, or sublicense the Software, or charge any fee for it or for
+      access to it, alone or as part of another product or service;
+   b. modify, adapt, translate, or create derivative works of the Software, or use parts of it in
+      other software;
+   c. copy, publish, distribute, or share the Software or any part of it, modified or unmodified,
+      except as allowed in section 1. Linking to the official repository is allowed;
+   d. remove or change this license or any copyright notice in the Software.
+
+3. Contributions
+
+   You may propose changes by opening issues or pull requests in the official repository. By
+   submitting a contribution, you grant the copyright holder a perpetual, worldwide, royalty-free,
+   irrevocable right to use, modify, distribute, and relicense it as part of the Software.
+
+4. Your games
+
+   Games, art, data, and other output that you create with the Software belong to you, and this
+   license places no restrictions on them, including selling them. This does not allow you to
+   include the Software itself, or parts of it, in what you distribute.
+
+5. Hosting platforms
+
+   If the Software is hosted on a platform such as GitHub, the platform's own terms may let its
+   users view or fork the repository there. That does not grant any right beyond those terms or
+   this license.
+
+6. Termination
+
+   If you break any term of this license, your rights under it end automatically.
+
+7. No warranty
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+   DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

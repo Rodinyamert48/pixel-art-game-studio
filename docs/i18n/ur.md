@@ -192,6 +192,6 @@ python scripts/validate_repository.py
 <!-- section: license -->
 ## لائسنس
 
-‏Pixel Art Game Studio کو [MIT لائسنس](../../LICENSE) کے تحت جاری کیا گیا ہے۔ اس سے بنائے گئے گیمز آپ کے ہیں۔
+‏Pixel Art Game Studio کو [صرف استعمال کے لائسنس](../../LICENSE) کے تحت جاری کیا گیا ہے: آپ اسے مفت استعمال کر سکتے ہیں، لیکن اسے بیچ، تبدیل یا دوبارہ تقسیم نہیں کر سکتے۔ اس سے بنائے گئے گیمز آپ کے ہیں۔
 
 </div>

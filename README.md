@@ -250,14 +250,15 @@ See [docs/TESTING.md](docs/TESTING.md) and [docs/TROUBLESHOOTING.md](docs/TROUBL
 
 ## Contributing
 
-Issues and pull requests are welcome: [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md). Please follow the
+Issues and pull requests to this repository are welcome: [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md). Please follow the
 [Code of Conduct](docs/CODE_OF_CONDUCT.md). Translation reviews by native speakers are especially
 valuable.
 
 ## License
 
-[MIT](LICENSE), copyright the Pixel Art Game Studio contributors. Games you create with the toolkit are
-yours; the toolkit does not claim any rights in them.
+[Use-only license](LICENSE), copyright Rodinyamert48. You may use the toolkit free of charge, but you
+may not sell, modify, or redistribute it. Games you create with the toolkit are yours; the toolkit
+does not claim any rights in them.
 
 ## Documentation
 
