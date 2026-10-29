@@ -9,11 +9,53 @@
 - For real games: the engine you want (Godot 4, .NET SDK for MonoGame, Node.js for web, ...). The skill
   checks what is installed and asks before installing anything.
 
-Get the repository by cloning your fork or copy (there is no official hosted URL configured in this
-repository; replace the placeholder with yours):
+## Plugin (recommended)
+
+The repository is also a Claude Code plugin marketplace (`.claude-plugin/marketplace.json`) that lists
+one plugin, this repository itself (`.claude-plugin/plugin.json`). Inside Claude Code:
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+On Claude Code 2.1.275 or later a single command adds the marketplace and installs:
+
+```text
+/plugin install pixel-art-game-studio --marketplace Rodinyamert48/pixel-art-game-studio
+```
+
+The same from a shell, optionally limited to one project with `--scope project`:
 
 ```bash
-git clone <your-fork-or-copy-url> pixel-art-game-studio
+claude plugin marketplace add Rodinyamert48/pixel-art-game-studio
+claude plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+| Task | Command |
+| --- | --- |
+| Check it loaded | `claude plugin details pixel-art-game-studio` |
+| Update | `claude plugin update pixel-art-game-studio` |
+| Disable / enable | `claude plugin disable pixel-art-game-studio` / `claude plugin enable pixel-art-game-studio` |
+| Remove | `claude plugin uninstall pixel-art-game-studio` |
+
+Plugin components are namespaced with the plugin name:
+
+| Component | Without plugin | As plugin |
+| --- | --- | --- |
+| Skill | `/pixel-art-game-studio` | `/pixel-art-game-studio:pixel-art-game-studio` |
+| Agents | `qa-tester`, ... | `pixel-art-game-studio:qa-tester`, ... |
+
+The plugin version is pinned in `plugin.json` (`0.1.0`), so `update` only changes something after a new
+version is published. Do not install both the plugin and the copied `.claude/` files in the same
+project, or Claude Code will see two copies of each agent under different names.
+
+## Copying the files instead
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Rodinyamert48/pixel-art-game-studio.git
 ```
 
 ## Where Claude Code looks
@@ -25,7 +67,7 @@ git clone <your-fork-or-copy-url> pixel-art-game-studio
 
 Project definitions take priority over user definitions with the same name.
 
-## Three ways to use it
+## Three ways to use the copied files
 
 1. **Inside this repository.** Run `claude` in the repository root. The skill and agents are already in
    `.claude/`. Create games in a subfolder (for example `games/my-game/`) so they stay separate from the

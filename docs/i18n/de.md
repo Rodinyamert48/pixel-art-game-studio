@@ -73,7 +73,14 @@ dieselben Schritte nacheinander selbst. Siehe [ARCHITECTURE.md](../ARCHITECTURE.
 <!-- section: installation -->
 ## Installation
 
-Klonen Sie das Repository und wählen Sie dann die Installationsart. Sehen Sie sich jede Änderung zuerst
+Am einfachsten installieren Sie es als Plugin direkt in Claude Code. Der Skill heißt dann `/pixel-art-game-studio:pixel-art-game-studio`, und die Agenten erhalten das Präfix `pixel-art-game-studio:`:
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+Oder ohne das Plugin-System: Klonen Sie das Repository und wählen Sie dann die Installationsart. Sehen Sie sich jede Änderung zuerst
 mit `--dry-run` an:
 
 ```bash

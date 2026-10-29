@@ -76,7 +76,14 @@ disponibles, le Director effectue lui-même les mêmes étapes, l'une après l'a
 <!-- section: installation -->
 ## Installation
 
-Clonez le dépôt, puis choisissez le mode d'installation. Prévisualisez toujours les changements avec
+Le plus simple est de l'installer comme plugin depuis Claude Code. La skill s'appelle alors `/pixel-art-game-studio:pixel-art-game-studio` et les agents prennent le préfixe `pixel-art-game-studio:` :
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+Ou bien, sans le système de plugins : Clonez le dépôt, puis choisissez le mode d'installation. Prévisualisez toujours les changements avec
 `--dry-run` :
 
 ```bash

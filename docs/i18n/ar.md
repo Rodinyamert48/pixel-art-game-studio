@@ -69,6 +69,19 @@
 <!-- section: installation -->
 ## التثبيت
 
+أسهل طريقة هي تثبيتها كإضافة (plugin) من داخل Claude Code. وعندئذٍ تُستدعى المهارة باسم `/pixel-art-game-studio:pixel-art-game-studio`، وتحمل أسماء الوكلاء البادئة `pixel-art-game-studio:`:
+
+</div>
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+<div dir="rtl">
+
+أو من دون نظام الإضافات:
+
 انسخ المستودع، ثم اختر طريقة التثبيت. استعرض كل تغيير أولًا باستخدام `--dry-run`:
 
 </div>

@@ -74,7 +74,14 @@ sendiri, satu per satu. Lihat [ARCHITECTURE.md](../ARCHITECTURE.md).
 <!-- section: installation -->
 ## Pemasangan
 
-Kloning repositori, lalu pilih cara pemasangan. Lihat dulu setiap perubahan dengan `--dry-run`:
+Cara termudah adalah memasangnya sebagai plugin dari dalam Claude Code. Skill tersebut kemudian dipanggil dengan `/pixel-art-game-studio:pixel-art-game-studio` dan nama agen mendapat awalan `pixel-art-game-studio:`:
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+Atau, tanpa sistem plugin: Kloning repositori, lalu pilih cara pemasangan. Lihat dulu setiap perubahan dengan `--dry-run`:
 
 ```bash
 python scripts/install.py --scope project --project-dir ../my-game --dry-run

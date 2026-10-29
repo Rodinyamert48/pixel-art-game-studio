@@ -1,0 +1,25 @@
+{
+  "name": "pixel-art-game-studio",
+  "displayName": "Pixel Art Game Studio",
+  "version": "0.1.0",
+  "description": "Game Director skill, eight specialist subagents, procedural pixel-art generator, and QA tools for building original 2D pixel-art games",
+  "author": {
+    "name": "Rodinyamert48",
+    "url": "https://github.com/Rodinyamert48"
+  },
+  "homepage": "https://github.com/Rodinyamert48/pixel-art-game-studio",
+  "repository": "https://github.com/Rodinyamert48/pixel-art-game-studio",
+  "license": "MIT",
+  "keywords": ["game-development", "pixel-art", "2d", "godot", "monogame", "procedural-art", "qa"],
+  "skills": ["./.claude/skills/"],
+  "agents": [
+    "./.claude/agents/pixel-artist.md",
+    "./.claude/agents/npc-story-engineer.md",
+    "./.claude/agents/world-builder-level-design.md",
+    "./.claude/agents/world-builder-environmental-content.md",
+    "./.claude/agents/ui-engineer.md",
+    "./.claude/agents/gameplay-engineer.md",
+    "./.claude/agents/qa-tester.md",
+    "./.claude/agents/bug-fixer.md"
+  ]
+}

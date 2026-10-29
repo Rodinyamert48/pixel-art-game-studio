@@ -52,7 +52,14 @@ Director はサブエージェントではなくスキルです。あなたの�
 <!-- section: installation -->
 ## インストール
 
-リポジトリをクローンしてから、インストール方法を選びます。変更内容はまず `--dry-run` で確認してください。
+いちばん簡単なのは、Claude Code の中からプラグインとしてインストールする方法です。この場合、スキルは `/pixel-art-game-studio:pixel-art-game-studio` という名前で呼び出され、エージェント名には `pixel-art-game-studio:` が付きます。
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+プラグインの仕組みを使わない場合は、次のようにします。 リポジトリをクローンしてから、インストール方法を選びます。変更内容はまず `--dry-run` で確認してください。
 
 ```bash
 python scripts/install.py --scope project --project-dir ../my-game --dry-run

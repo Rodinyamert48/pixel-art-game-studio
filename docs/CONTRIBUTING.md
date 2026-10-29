@@ -36,5 +36,7 @@ Describe what changed, why, and what you ran. If you could not test something, s
 
 ## Releasing
 
-Before tagging a release, run the commands above, update the version in `pyproject.toml`, and note
-user-visible changes in the pull request or release notes.
+Before tagging a release, run the commands above and `claude plugin validate .`, then raise the
+version in both `pyproject.toml` and `.claude-plugin/plugin.json` (the repository validator fails if
+they differ). Plugin users only receive the update after the version changes. Note user-visible
+changes in the pull request or release notes.

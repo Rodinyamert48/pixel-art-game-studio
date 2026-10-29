@@ -68,7 +68,14 @@ the same steps itself, one after another. See [ARCHITECTURE.md](../ARCHITECTURE.
 <!-- section: installation -->
 ## Installation
 
-Clone the repository, then choose how to install. Preview every change with `--dry-run` first:
+The easiest way is to install it as a plugin from inside Claude Code. The skill is then called `/pixel-art-game-studio:pixel-art-game-studio` and the agents get the `pixel-art-game-studio:` prefix:
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+Or, without the plugin system: Clone the repository, then choose how to install. Preview every change with `--dry-run` first:
 
 ```bash
 python scripts/install.py --scope project --project-dir ../my-game --dry-run

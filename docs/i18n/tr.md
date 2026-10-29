@@ -72,7 +72,14 @@ kullanılamıyorsa Director aynı adımları sırayla kendisi uygular. Bkz. [ARC
 <!-- section: installation -->
 ## Kurulum
 
-Depoyu klonlayın, ardından kurulum şeklini seçin. Her değişikliği önce `--dry-run` ile önizleyin:
+En kolay yol, Claude Code içinden eklenti (plugin) olarak kurmaktır. Bu durumda beceri `/pixel-art-game-studio:pixel-art-game-studio` adıyla çağrılır ve ajan adları `pixel-art-game-studio:` önekini alır:
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+Ya da eklenti sistemi olmadan: Depoyu klonlayın, ardından kurulum şeklini seçin. Her değişikliği önce `--dry-run` ile önizleyin:
 
 ```bash
 python scripts/install.py --scope project --project-dir ../my-game --dry-run

@@ -73,7 +73,14 @@ Director একটি স্কিল, সাবএজেন্ট নয়, �
 <!-- section: installation -->
 ## ইনস্টলেশন
 
-রিপোজিটরি ক্লোন করুন, তারপর ইনস্টলের পদ্ধতি বেছে নিন। প্রতিটি পরিবর্তন আগে `--dry-run` দিয়ে দেখে
+সবচেয়ে সহজ উপায় হলো Claude Code-এর ভেতর থেকে এটি প্লাগইন হিসেবে ইনস্টল করা। তখন স্কিলটির নাম হয় `/pixel-art-game-studio:pixel-art-game-studio` এবং এজেন্টদের নামের আগে `pixel-art-game-studio:` যুক্ত হয়:
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+অথবা প্লাগইন ব্যবস্থা ছাড়া: রিপোজিটরি ক্লোন করুন, তারপর ইনস্টলের পদ্ধতি বেছে নিন। প্রতিটি পরিবর্তন আগে `--dry-run` দিয়ে দেখে
 নিন:
 
 ```bash

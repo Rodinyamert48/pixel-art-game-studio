@@ -103,25 +103,46 @@ available, the Director runs the same phases itself, in order. More in
 ## Installation
 
 Requirements: Claude Code, Python 3.9 or newer (standard library only), and for actual games the engine
-you choose (for example Godot 4 or .NET for MonoGame). Clone this repository first:
+you choose (for example Godot 4 or .NET for MonoGame).
+
+**Option 1: install as a Claude Code plugin** (recommended, no cloning). Inside Claude Code:
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+On Claude Code 2.1.275 or later, one line does both:
+
+```text
+/plugin install pixel-art-game-studio --marketplace Rodinyamert48/pixel-art-game-studio
+```
+
+From a shell, the same steps are `claude plugin marketplace add Rodinyamert48/pixel-art-game-studio`
+and `claude plugin install pixel-art-game-studio@pixel-art-game-studio`. Plugin components carry the
+plugin name as a prefix: the skill is `/pixel-art-game-studio:pixel-art-game-studio` and the agents are
+`pixel-art-game-studio:qa-tester` and so on. Update with `claude plugin update pixel-art-game-studio`,
+remove with `claude plugin uninstall pixel-art-game-studio`.
+
+The other options need a clone:
 
 ```bash
-git clone <your-fork-or-copy-url> pixel-art-game-studio
+git clone https://github.com/Rodinyamert48/pixel-art-game-studio.git
 cd pixel-art-game-studio
 ```
 
-**Option 1: use it right here.** This repository already contains `.claude/skills/` and
+**Option 2: use it right here.** This repository already contains `.claude/skills/` and
 `.claude/agents/`, so running `claude` inside it makes the skill and agents available to games you
-create in subfolders. Good for trying it out.
+create in subfolders. Good for trying it out or developing the toolkit.
 
-**Option 2: install into a game project** (recommended):
+**Option 3: copy into a game project** with the installer:
 
 ```bash
 python scripts/install.py --scope project --project-dir ../my-game --dry-run
 python scripts/install.py --scope project --project-dir ../my-game
 ```
 
-**Option 3: install for all your projects** (into `~/.claude`):
+**Option 4: copy for all your projects** (into `~/.claude`):
 
 ```bash
 python scripts/install.py --scope user --dry-run
@@ -142,8 +163,10 @@ In the project directory, start Claude Code and invoke the skill:
 three memorable NPCs, branching dialogue, a day/night cycle, two quests, and a save system.
 ```
 
-Claude can also load the skill automatically when your request matches its description. To make sure a
-specific specialist runs, mention it: `@agent-qa-tester run all checks and report defects`.
+If you installed the plugin, the command is `/pixel-art-game-studio:pixel-art-game-studio`. Claude can
+also load the skill automatically when your request matches its description. To make sure a specific
+specialist runs, mention it from the `@` menu, for example `@agent-qa-tester run all checks and report
+defects` (plugin: `@agent-pixel-art-game-studio:qa-tester`).
 
 ## Example prompts
 

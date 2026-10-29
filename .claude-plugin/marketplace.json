@@ -1,0 +1,15 @@
+{
+  "name": "pixel-art-game-studio",
+  "description": "Pixel Art Game Studio plugins for Claude Code",
+  "owner": {
+    "name": "Rodinyamert48",
+    "url": "https://github.com/Rodinyamert48"
+  },
+  "plugins": [
+    {
+      "name": "pixel-art-game-studio",
+      "source": "./",
+      "description": "Build, test, and debug original 2D pixel-art games with a Game Director skill and eight specialist subagents"
+    }
+  ]
+}

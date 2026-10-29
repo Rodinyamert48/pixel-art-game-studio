@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import ast
+import json
 import re
 import sys
 from pathlib import Path
@@ -32,6 +33,7 @@ REQUIRED_FILES = [
     *[f".claude/agents/{a}.md" for a in AGENTS],
     "scripts/install.py", "scripts/validate_repository.py", "scripts/check_translations.py",
     "README.md", "LICENSE", ".gitignore", "pyproject.toml", "docs/i18n/manifest.json",
+    ".claude-plugin/plugin.json", ".claude-plugin/marketplace.json",
     *[f"docs/{n}.md" for n in ("ARCHITECTURE", "INSTALLATION", "AGENTS", "WORKFLOWS", "TESTING", "TROUBLESHOOTING",
                                "CONTRIBUTING", "CODE_OF_CONDUCT")],
     *[f"examples/{n}.md" for n in ("example-game-idea", "example-game-design", "example-workflow")],
@@ -183,9 +185,37 @@ def check_presentation(root: Path) -> list[str]:
     return problems
 
 
+def check_plugin(root: Path) -> list[str]:
+    """The plugin manifest must expose the same skill and agents as .claude/, at the pyproject version."""
+    try:
+        plugin = json.loads((root / ".claude-plugin/plugin.json").read_text(encoding="utf-8"))
+        market = json.loads((root / ".claude-plugin/marketplace.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return [f".claude-plugin: cannot read manifests: {exc}"]
+    problems = []
+    if plugin.get("name") != "pixel-art-game-studio":
+        problems.append("plugin.json: name must be 'pixel-art-game-studio'")
+    if "./.claude/skills/" not in plugin.get("skills", []):
+        problems.append("plugin.json: skills must include './.claude/skills/'")
+    expected = {f"./.claude/agents/{a}.md" for a in AGENTS}
+    if set(plugin.get("agents", [])) != expected:
+        problems.append("plugin.json: agents must list exactly the eight files in .claude/agents/")
+    pyproject = (root / "pyproject.toml").read_text(encoding="utf-8") if (root / "pyproject.toml").is_file() else ""
+    m = re.search(r'^version\s*=\s*"([^"]+)"', pyproject, re.M)
+    if m and plugin.get("version") != m.group(1):
+        problems.append(f"plugin.json: version {plugin.get('version')!r} differs from pyproject.toml {m.group(1)!r}")
+    entries = [e for e in market.get("plugins", []) if isinstance(e, dict) and e.get("name") == plugin.get("name")]
+    if len(entries) != 1 or entries[0].get("source") not in ("./", "."):
+        problems.append("marketplace.json: needs one entry for the plugin with source './'")
+    if not market.get("name") or not isinstance(market.get("owner"), dict):
+        problems.append("marketplace.json: name and owner are required")
+    return problems
+
+
 def validate(root: Path = REPO_ROOT, translations: bool = True) -> list[str]:
     problems = [f"missing required file: {f}" for f in REQUIRED_FILES if not (root / f).is_file()]
     problems += check_skill(root) + check_agents(root) + check_python(root) + check_links(root) + check_presentation(root)
+    problems += check_plugin(root) if (root / ".claude-plugin").is_dir() else []
     if translations:
         problems += [f"translations: {p}" for p in check_translations.check(root)]
     return problems

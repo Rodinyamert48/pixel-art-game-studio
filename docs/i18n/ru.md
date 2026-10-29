@@ -73,7 +73,14 @@ Director — это навык, а не субагент, потому что о
 <!-- section: installation -->
 ## Установка
 
-Клонируйте репозиторий и выберите способ установки. Сначала просмотрите изменения с `--dry-run`:
+Проще всего установить его как плагин прямо из Claude Code. Тогда навык вызывается как `/pixel-art-game-studio:pixel-art-game-studio`, а имена агентов получают префикс `pixel-art-game-studio:`:
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+Или без системы плагинов: Клонируйте репозиторий и выберите способ установки. Сначала просмотрите изменения с `--dry-run`:
 
 ```bash
 python scripts/install.py --scope project --project-dir ../my-game --dry-run

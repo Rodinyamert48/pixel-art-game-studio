@@ -75,7 +75,14 @@ mismos pasos por sí mismo, uno tras otro. Consulte [ARCHITECTURE.md](../ARCHITE
 <!-- section: installation -->
 ## Instalación
 
-Clone el repositorio y luego elija cómo instalar. Revise primero cada cambio con `--dry-run`:
+La forma más sencilla es instalarlo como plugin desde Claude Code. La skill se llama entonces `/pixel-art-game-studio:pixel-art-game-studio` y los agentes llevan el prefijo `pixel-art-game-studio:`:
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+O bien, sin el sistema de plugins: Clone el repositorio y luego elija cómo instalar. Revise primero cada cambio con `--dry-run`:
 
 ```bash
 python scripts/install.py --scope project --project-dir ../my-game --dry-run

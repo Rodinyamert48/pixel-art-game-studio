@@ -36,6 +36,9 @@ spawn further agents, and no agent sets `permissionMode`, so your own permission
 - **By name**: "Use the qa-tester subagent to test the save system."
 - **Guaranteed**: `@agent-qa-tester test the save system` (or pick it from the `@` menu).
 
+Installed as a plugin, every agent name carries the plugin prefix, for example
+`pixel-art-game-studio:qa-tester`, and the skill is `/pixel-art-game-studio:pixel-art-game-studio`.
+
 When you call a specialist directly, give it the same information a brief would (task, allowed files,
 how to verify); see the brief template in
 [agent-coordination.md](../.claude/skills/pixel-art-game-studio/references/agent-coordination.md).

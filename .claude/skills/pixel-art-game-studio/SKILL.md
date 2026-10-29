@@ -73,7 +73,9 @@ Never build many unfinished areas before one complete loop works.
 
 ## 4. Use specialists deliberately
 
-Eight subagents are defined in `.claude/agents/` (project) or `~/.claude/agents/` (user):
+Eight subagents are defined in `.claude/agents/` (project) or `~/.claude/agents/` (user). When this
+toolkit is installed as a plugin, the same agents are named with a `pixel-art-game-studio:` prefix
+(for example `pixel-art-game-studio:qa-tester`); use whichever form the available agent list shows.
 
 | Agent | Owns |
 | --- | --- |

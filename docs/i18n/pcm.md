@@ -74,7 +74,14 @@ one after di oda. Check [ARCHITECTURE.md](../ARCHITECTURE.md).
 <!-- section: installation -->
 ## How to install am
 
-Clone di repository, den choose how you wan install. Use `--dry-run` first make you see every change:
+Di easiest way na to install am as plugin from inside Claude Code. Den di skill go get di name `/pixel-art-game-studio:pixel-art-game-studio`, and di agents go carry `pixel-art-game-studio:` for front:
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+Or, if you no wan use di plugin system: Clone di repository, den choose how you wan install. Use `--dry-run` first make you see every change:
 
 ```bash
 python scripts/install.py --scope project --project-dir ../my-game --dry-run

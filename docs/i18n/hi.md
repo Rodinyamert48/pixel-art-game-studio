@@ -71,7 +71,14 @@ Director एक स्किल है, सबएजेंट नहीं, क�
 <!-- section: installation -->
 ## इंस्टॉलेशन
 
-रिपॉज़िटरी क्लोन करें, फिर इंस्टॉल करने का तरीका चुनें। हर बदलाव को पहले `--dry-run` से देख लें:
+सबसे आसान तरीका है इसे Claude Code के भीतर से प्लगइन के रूप में इंस्टॉल करना। तब स्किल का नाम `/pixel-art-game-studio:pixel-art-game-studio` हो जाता है और एजेंटों के नाम के आगे `pixel-art-game-studio:` जुड़ जाता है:
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+या प्लगइन व्यवस्था के बिना: रिपॉज़िटरी क्लोन करें, फिर इंस्टॉल करने का तरीका चुनें। हर बदलाव को पहले `--dry-run` से देख लें:
 
 ```bash
 python scripts/install.py --scope project --project-dir ../my-game --dry-run

@@ -52,7 +52,14 @@ Director 是技能而不是子代理，因为它需要看到你的请求，并�
 <!-- section: installation -->
 ## 安装
 
-先克隆仓库，然后选择安装方式。每次改动前都可以用 `--dry-run` 预览：
+最简单的方法是在 Claude Code 中把它作为插件安装。这样技能的调用名称会变成 `/pixel-art-game-studio:pixel-art-game-studio`，代理名称也会加上 `pixel-art-game-studio:` 前缀：
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+或者，不使用插件系统： 先克隆仓库，然后选择安装方式。每次改动前都可以用 `--dry-run` 预览：
 
 ```bash
 python scripts/install.py --scope project --project-dir ../my-game --dry-run

@@ -6,6 +6,8 @@
 | --- | --- |
 | `/pixel-art-game-studio` does not appear | Check that `SKILL.md` is at `.claude/skills/pixel-art-game-studio/SKILL.md` (project) or `~/.claude/skills/pixel-art-game-studio/SKILL.md` (user) and that its first line is `---`. |
 | Agents are not used or "not found" | Check `.claude/agents/` or `~/.claude/agents/`. If that directory was created after the session started, restart Claude Code. Without agents the skill still works, sequentially. |
+| Plugin installed but `/pixel-art-game-studio` is missing | Plugin skills are namespaced: use `/pixel-art-game-studio:pixel-art-game-studio`. Check with `claude plugin details pixel-art-game-studio`; run `/reload-plugins` or start a new session. |
+| Agents appear twice | Both the plugin and copied `.claude/agents/` files are active. Keep one: uninstall the plugin or remove the copies with `python scripts/install.py ... --uninstall`. |
 | Installer exits with code 2 | A file it wants to write already exists and was not installed by it (conflict), or it differs and needs `--update`. Read the plan it printed. |
 | Installer says the manifest is unreadable | Fix or delete `skills/pixel-art-game-studio/.install-manifest.json` in the target. Deleting it makes the installer treat existing files as conflicts. |
 | `python` is not recognized | Use `python3` or `py -3`, or install Python 3.9+. |

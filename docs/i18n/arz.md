@@ -69,6 +69,19 @@
 <!-- section: installation -->
 ## التسطيب
 
+أسهل طريقة إنك تسطّبه كـ plugin من جوه Claude Code. ساعتها الـ skill هيبقى اسمه `/pixel-art-game-studio:pixel-art-game-studio`، والوكلاء أساميهم هيبقى قبلها `pixel-art-game-studio:`:
+
+</div>
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+<div dir="rtl">
+
+أو من غير نظام الـ plugins:
+
 اعمل clone للمستودع، وبعدين اختار هتسطّب إزاي. شوف كل تغيير الأول بـ `--dry-run`:
 
 </div>

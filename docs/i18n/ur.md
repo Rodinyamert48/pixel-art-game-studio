@@ -73,6 +73,19 @@
 <!-- section: installation -->
 ## انسٹالیشن
 
+سب سے آسان طریقہ یہ ہے کہ اسے Claude Code کے اندر سے پلگ اِن کے طور پر انسٹال کریں۔ اس صورت میں اسکل کا نام `/pixel-art-game-studio:pixel-art-game-studio` ہو جاتا ہے اور ایجنٹوں کے ناموں کے آگے `pixel-art-game-studio:` لگ جاتا ہے:
+
+</div>
+
+```text
+/plugin marketplace add Rodinyamert48/pixel-art-game-studio
+/plugin install pixel-art-game-studio@pixel-art-game-studio
+```
+
+<div dir="rtl">
+
+یا پلگ اِن نظام کے بغیر:
+
 ریپوزیٹری کو کلون کریں، پھر انسٹال کرنے کا طریقہ منتخب کریں۔ ہر تبدیلی کو پہلے `--dry-run` سے دیکھ لیں:
 
 </div>

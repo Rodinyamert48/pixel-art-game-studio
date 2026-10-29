@@ -1,4 +1,5 @@
 """Repository validator tests: the real repository passes, and broken copies are caught."""
+import json
 import shutil
 import tempfile
 import unittest
@@ -61,6 +62,17 @@ class BrokenCopyTest(unittest.TestCase):
     def test_links_in_code_blocks_ignored(self):
         (self.root / "docs/TESTING.md").write_text("```\n[x](missing.md)\n```\n", encoding="utf-8")
         self.assertEqual(self.problems(), [])
+
+    def test_plugin_manifest_must_match_agents_and_version(self):
+        manifest = self.root / ".claude-plugin/plugin.json"
+        text = manifest.read_text(encoding="utf-8")
+        data = json.loads(text)
+        data["agents"].remove("./.claude/agents/bug-fixer.md")
+        data["version"] = "9.9.9"
+        manifest.write_text(json.dumps(data), encoding="utf-8")
+        text = "\n".join(self.problems())
+        self.assertIn("agents must list exactly", text)
+        self.assertIn("differs from pyproject.toml", text)
 
     def test_badge_rejected(self):
         readme = self.root / "README.md"
