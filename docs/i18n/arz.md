@@ -183,6 +183,6 @@ python scripts/validate_repository.py
 <!-- section: license -->
 ## الرخصة
 
-‏Pixel Art Game Studio منشور تحت [رخصة MIT](../../LICENSE). والألعاب اللي بتعملها بيه بتاعتك إنت.
+‏Pixel Art Game Studio منشور تحت [رخصة للاستخدام بس](../../LICENSE): تقدر تستخدمه ببلاش، بس ماينفعش تبيعه أو تعدّل فيه أو توزّعه تاني. والألعاب اللي بتعملها بيه بتاعتك إنت.
 
 </div>

@@ -9,7 +9,7 @@
   },
   "homepage": "https://github.com/Rodinyamert48/pixel-art-game-studio",
   "repository": "https://github.com/Rodinyamert48/pixel-art-game-studio",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "keywords": ["game-development", "pixel-art", "2d", "godot", "monogame", "procedural-art", "qa"],
   "skills": ["./.claude/skills/"],
   "agents": [

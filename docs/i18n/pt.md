@@ -177,5 +177,5 @@ pull request.
 <!-- section: license -->
 ## Licença
 
-Pixel Art Game Studio é distribuído sob a [licença MIT](../../LICENSE). Os jogos que você cria com ele
-são seus.
+Pixel Art Game Studio é distribuído sob uma [licença somente de uso](../../LICENSE): você pode usá-lo de graça,
+mas não pode vendê-lo, modificá-lo nem redistribuí-lo. Os jogos que você cria com ele são seus.

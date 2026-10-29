@@ -179,5 +179,6 @@ request.
 <!-- section: license -->
 ## Lisensi
 
-Pixel Art Game Studio dirilis dengan [Lisensi MIT](../../LICENSE). Game yang Anda buat dengannya adalah
-milik Anda.
+Pixel Art Game Studio dirilis dengan [lisensi hanya-penggunaan](../../LICENSE): Anda boleh memakainya secara
+gratis, tetapi tidak boleh menjual, mengubah, atau mendistribusikannya ulang. Game yang Anda buat
+dengannya adalah milik Anda.

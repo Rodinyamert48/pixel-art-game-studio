@@ -184,6 +184,6 @@ python scripts/validate_repository.py
 <!-- section: license -->
 ## الترخيص
 
-يُنشر Pixel Art Game Studio بموجب [ترخيص MIT](../../LICENSE). والألعاب التي تصنعها به ملك لك.
+يُنشر Pixel Art Game Studio بموجب [ترخيص للاستخدام فقط](../../LICENSE): يمكنك استخدامه مجانًا، لكن لا يجوز لك بيعه أو تعديله أو إعادة توزيعه. والألعاب التي تصنعها به ملك لك.
 
 </div>

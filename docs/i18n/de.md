@@ -180,5 +180,6 @@ einen Pull Request öffnen.
 <!-- section: license -->
 ## Lizenz
 
-Pixel Art Game Studio steht unter der [MIT-Lizenz](../../LICENSE). Die Spiele, die Sie damit
-erstellen, gehören Ihnen.
+Pixel Art Game Studio steht unter einer [reinen Nutzungslizenz](../../LICENSE): Sie dürfen es kostenlos
+nutzen, aber nicht verkaufen, verändern oder weiterverbreiten. Die Spiele, die Sie damit erstellen,
+gehören Ihnen.

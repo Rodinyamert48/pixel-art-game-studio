@@ -175,5 +175,5 @@ pull request.
 <!-- section: license -->
 ## License
 
-Pixel Art Game Studio dey under di [MIT License](../../LICENSE). Di games wey you make with am na your
-own.
+Pixel Art Game Studio dey under one [use-only license](../../LICENSE): you fit use am free, but you no fit sell
+am, change am, or share am give oda people. Di games wey you make with am na your own.

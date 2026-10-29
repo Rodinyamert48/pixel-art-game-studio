@@ -174,5 +174,6 @@ belgelerini okuyun.
 <!-- section: license -->
 ## Lisans
 
-Pixel Art Game Studio, [MIT Lisansı](../../LICENSE) ile yayımlanmıştır. Onunla yaptığınız oyunlar size
-aittir.
+Pixel Art Game Studio, [yalnızca kullanım lisansı](../../LICENSE) ile yayımlanmıştır: ücretsiz olarak
+kullanabilirsiniz, ancak satamaz, değiştiremez veya yeniden dağıtamazsınız. Onunla yaptığınız oyunlar
+size aittir.
