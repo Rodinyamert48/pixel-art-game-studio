@@ -34,7 +34,7 @@ claude plugin install pixel-art-game-studio@pixel-art-game-studio
 
 | Task | Command |
 | --- | --- |
-| Check it loaded | `claude plugin details pixel-art-game-studio` |
+| Check it loaded | type `/agents` or `@` in a session; `claude plugin details pixel-art-game-studio` lists the skill but, in Claude Code 2.1.312, shows `Agents (0)` because the agents live outside the default `agents/` folder, although sessions load all eight |
 | Update | `claude plugin update pixel-art-game-studio` |
 | Disable / enable | `claude plugin disable pixel-art-game-studio` / `claude plugin enable pixel-art-game-studio` |
 | Remove | `claude plugin uninstall pixel-art-game-studio` |
